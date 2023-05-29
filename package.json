@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha",
-    "test:commit": "commitlint --from=develop --to=HEAD"
+    "test:lint": "eslint ."
   },
   "repository": {
     "type": "git",
