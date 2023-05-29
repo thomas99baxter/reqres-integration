@@ -1,4 +1,4 @@
-name: Unit and Postman Tests
+name: Unit Tests
 
 on:
   pull_request:

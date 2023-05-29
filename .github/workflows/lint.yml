@@ -5,14 +5,14 @@ on:
     branches: [ main ]
 
 jobs:
-  standard-linting:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.11.1'
-    - name: Install Dependencies
-      run: npm ci
-    - name: Run unit tests
-      run: npm run test:lint
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run unit tests
+        run: npm run test:lint
